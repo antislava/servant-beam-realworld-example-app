@@ -6,8 +6,8 @@ let
 in
   nixpkgs.lib.overrideDerivation packageWithTools.env (drv: {
     shellHook = drv.shellHook + ''
-      mkdir -p $PWD/database/pgdata
       export PGDATA=$PWD/database/pgdata
+      mkdir -p $PGDATA
 
       mkdir -p $PWD/logs
 
