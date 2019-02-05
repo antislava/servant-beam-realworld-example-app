@@ -56,6 +56,8 @@ With the caveat that the Authorization header format is _slightly_ different, th
   $ cp .envrc.example .envrc
   $ direnv allow
   ```
+  Also, make sure to `eval "$(direnv hook <shell>)"` (for the respective shell), or put it in the respective ~/.<shell>rc!
+
 
 3. Setup the database.
 

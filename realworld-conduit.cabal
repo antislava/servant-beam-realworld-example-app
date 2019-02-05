@@ -33,7 +33,7 @@ common ghc
 common deps
   build-depends:
       aeson
-    , base-noprelude >=4.10 && <4.12
+    , base-noprelude
     , beam-core
     , beam-postgres
     , bytestring
